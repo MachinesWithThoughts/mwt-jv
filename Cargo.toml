@@ -1,0 +1,20 @@
+[package]
+name = "mwt-jv"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Machines With Thoughts JSON Viewer — an interactive JSON terminal viewer"
+license = "MIT"
+
+[dependencies]
+ratatui = { version = "0.30.2", default-features = false, features = ["crossterm", "layout-cache"] }
+crossterm = "0.29"
+serde_json = { version = "1", features = ["preserve_order", "arbitrary_precision"] }
+unicode-width = "0.2"
+
+[build-dependencies]
+time = "0.3"
+
+[profile.release]
+lto = "thin"
+strip = true

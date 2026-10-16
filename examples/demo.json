@@ -1,0 +1,13 @@
+{
+  "project": "MWT JSON Viewer",
+  "active": true,
+  "version": 1,
+  "users": [
+    {"id": 1, "name": "Ada Lovelace", "role": "admin", "active": true, "settings": {"theme": "dark", "alerts": ["email", "push"]}},
+    {"id": 2, "name": "Grace Hopper", "role": "editor", "active": false, "settings": {"theme": "light"}},
+    {"id": 3, "name": "雪", "role": "reader", "active": true, "email": null}
+  ],
+  "mixed": [42, "hello", null, {"nested": [1, 2, 3]}],
+  "empty": {},
+  "tags": ["rust", "terminal", "json"]
+}

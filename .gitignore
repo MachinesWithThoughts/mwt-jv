@@ -1,0 +1,4 @@
+/target/
+/.deploy-keys/
+# Local input captures are not part of the application.
+/20??????-??????-*.json
